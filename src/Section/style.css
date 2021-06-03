@@ -5,12 +5,6 @@
     box-shadow: 0px 0px 2px 2px #ddd;
 }
 
-.section__header {
-    margin-bottom: 0;
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
-}
-
 .section__top {
     display: flex;
     justify-content: space-between;
