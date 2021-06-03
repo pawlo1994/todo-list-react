@@ -1,0 +1,40 @@
+.buttons {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media(max-width: 767px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.button {
+    cursor: pointer;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: hsl(180, 100%, 25%);
+    transition: color 0.3s;
+}
+
+@media(max-width: 767px) {
+    .button {
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+}
+
+.button--hidden {
+    display: none;
+}
+
+.button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.button:disabled {
+    color: #999;
+}
