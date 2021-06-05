@@ -1,8 +1,20 @@
 # To-Do List React App
 
+## Demo
+https://pawlo1994.github.io/todo-list-react
 ## Description
 
+Simple to-do list app written in React.js.
+It's just a preview but it will be updated soon.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Used Technologies
+1. React
+2. HTML
+3. CSS
+4. Flexbox
+5. Grid
+6. BEM
 
 ## Available Scripts
 
