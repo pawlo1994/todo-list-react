@@ -5,7 +5,6 @@ https://pawlo1994.github.io/todo-list-react
 ## Description
 
 Simple to-do list app written in React.js.
-It's just a preview but it will be updated soon.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Used Technologies
@@ -15,6 +14,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Flexbox
 5. Grid
 6. BEM
+
+## How to use
+1. Type your task content in field which is in "Dodaj nowe zadanie" section.
+![type new task gif](public/typeNewTask.gif)
+2. Then click on "Dodaj zadanie" button to add your task.
+![add new task gif](public/addNewTask.gif)
+3. If your task is done, you can click on green button which is next to your task text.
+![done task gif](public/doneTask.gif)
+4. If you want to delete your task, click on red button with trash.
+![delete task gif](public/deleteTask.gif)
+5. If you want to done all tasks, click on "ukończ wszystkie" button.
+![done all tasks gif](public/doneAllTasks.gif)
+6. If you want to hide done tasks, click on "ukryj ukończone". If you want to show them again, click on "pokaż ukończone".
+![toggle done tasks gif](public/toggleDoneTasks.gif)
 
 ## Available Scripts
 
