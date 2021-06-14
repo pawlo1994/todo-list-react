@@ -28,6 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![done all tasks gif](public/doneAllTasks.gif)
 6. If you want to hide done tasks, click on "ukryj ukończone". If you want to show them again, click on "pokaż ukończone".
 ![toggle done tasks gif](public/toggleDoneTasks.gif)
+Now your to-do list saves automaticaly after every update.
 
 ## Available Scripts
 
