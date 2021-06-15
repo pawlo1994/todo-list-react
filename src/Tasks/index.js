@@ -9,7 +9,12 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone, setTasks }) => {
     }, [tasks]);
 
     useEffect(() => {
-        setTasks(parsedTasks);
+        setTasks(() => {
+            if (!parsedTasks) {
+                return;
+            };
+            return (parsedTasks);
+        });
     }, []);
 
     return (
