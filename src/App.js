@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Form from './Form';
 import Tasks from './Tasks';
 import Buttons from './Buttons';
@@ -10,7 +10,6 @@ import Container from "./Container";
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([]);
-  const parsedTasks = JSON.parse(localStorage.getItem("tasks"));
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -47,14 +46,6 @@ function App() {
       ]);
   };
 
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
-
-  useEffect(() => {
-    setTasks(parsedTasks);
-  }, []);
-
   return (
     <Container>
       <Header title="Lista Zadań" />
@@ -67,6 +58,7 @@ function App() {
         body={
           <Tasks
             tasks={tasks}
+            setTasks={setTasks}
             hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
