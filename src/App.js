@@ -53,7 +53,8 @@ function App() {
         title="Dodaj nowe zadanie"
         body={<Form
           addNewTask={addNewTask}
-        />} />
+        />}
+      />
       <Section title="Lista zadań"
         body={
           <Tasks
@@ -71,7 +72,8 @@ function App() {
             toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
           />
-        } />
+        }
+      />
     </Container>
   );
 }
