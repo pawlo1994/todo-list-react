@@ -1,48 +1,30 @@
-import { useEffect } from "react";
 import "./style.css";
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone, setTasks }) => {
-    const parsedTasks = JSON.parse(localStorage.getItem("tasks"));
-
-    useEffect(() => {
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-    }, [tasks]);
-
-    useEffect(() => {
-        setTasks(() => {
-            if (!parsedTasks) {
-                return;
-            };
-            return (parsedTasks);
-        });
-    }, []);
-
-    return (
-        <ul className="tasks">
-            {tasks.map(task => (
-                <li
-                    key={task.id}
-                    className={`tasks__item ${hideDone && task.done ? "tasks__item--hidden" : ""}`}
+const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+    <ul className="tasks">
+        {tasks.map(task => (
+            <li
+                key={task.id}
+                className={`tasks__item ${hideDone && task.done ? "tasks__item--hidden" : ""}`}
+            >
+                <button
+                    className="tasks__button tasks__button--done"
+                    onClick={() => toggleTaskDone(task.id)}
                 >
-                    <button
-                        className="tasks__button tasks__button--done"
-                        onClick={() => toggleTaskDone(task.id)}
-                    >
-                        {task.done ? "✔" : ""}
-                    </button>
-                    <span className={`tasks__span ${task.done ? "tasks__span--done" : ""}`}>
-                        {task.id}. {task.content}
-                    </span>
-                    <button
-                        className="tasks__button tasks__button--remove"
-                        onClick={() => removeTask(task.id)}
-                    >
-                        🗑
-                    </button>
-                </li>
-            ))}
-        </ul>
-    );
-};
+                    {task.done ? "✔" : ""}
+                </button>
+                <span className={`tasks__span ${task.done ? "tasks__span--done" : ""}`}>
+                    {task.id}. {task.content}
+                </span>
+                <button
+                    className="tasks__button tasks__button--remove"
+                    onClick={() => removeTask(task.id)}
+                >
+                    🗑
+                </button>
+            </li>
+        ))}
+    </ul>
+);
 
 export default Tasks;
