@@ -63,7 +63,6 @@ function App() {
         body={
           <Tasks
             tasks={tasks}
-            setTasks={setTasks}
             hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
