@@ -17,17 +17,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to use
 1. Type your task content in field which is in "Dodaj nowe zadanie" section.
-![type new task gif](src/images/typeNewTask.gif)
+![type new task gif](images/typeNewTask.gif)
 2. Then click on "Dodaj zadanie" button to add your task.
-![add new task gif](src/images/addNewTask.gif)
+![add new task gif](images/addNewTask.gif)
 3. If your task is done, you can click on green button which is next to your task text.
-![done task gif](src/images/doneTask.gif)
+![done task gif](images/doneTask.gif)
 4. If you want to delete your task, click on red button with trash.
-![delete task gif](src/images/deleteTask.gif)
+![delete task gif](images/deleteTask.gif)
 5. If you want to done all tasks, click on "ukończ wszystkie" button.
-![done all tasks gif](src/images/doneAllTasks.gif)
+![done all tasks gif](images/doneAllTasks.gif)
 6. If you want to hide done tasks, click on "ukryj ukończone". If you want to show them again, click on "pokaż ukończone".
-![toggle done tasks gif](src/images/toggleDoneTasks.gif)
+![toggle done tasks gif](images/toggleDoneTasks.gif)
 Now your to-do list saves automaticaly after every update.
 
 ## Available Scripts
