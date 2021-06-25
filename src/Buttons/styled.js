@@ -12,7 +12,6 @@ export const StyledButtons = styled.div`
 `;
 
 export const StyledButtonsButton = styled.button`
-    cursor: pointer;
     padding-left: 20px;
     background-color: transparent;
     border: none;
@@ -30,6 +29,7 @@ export const StyledButtonsButton = styled.button`
 
     &:hover{
         color: hsl(180, 100%, 35%);
+        cursor: pointer;
     }
 
     &:active{
@@ -38,5 +38,6 @@ export const StyledButtonsButton = styled.button`
 
     &:disabled{
         color: #999;
+        cursor: default;
     }
 `;
