@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. CSS
 4. Flexbox
 5. Grid
-6. BEM
+6. Styled components
 
 ## How to use
 1. Type your task content in field which is in "Dodaj nowe zadanie" section.
