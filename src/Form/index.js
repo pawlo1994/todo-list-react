@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 import { StyledForm, StyledInput, StyledButton } from "./styled";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../theme";
 
 const Form = ({ addNewTask }) => {
     const inputRef = useRef(null);
@@ -16,18 +18,20 @@ const Form = ({ addNewTask }) => {
     }
 
     return (
-        <StyledForm
-            onSubmit={onFormSubmit}
-        >
-            <StyledInput
-                ref={inputRef}
-                placeholder="Co jest do zrobienia?"
-                value={newTaskContent}
-                onChange={({ target }) => setNewTaskContent(target.value)}
-                required
-            />
-            <StyledButton>Dodaj zadanie</StyledButton>
-        </StyledForm>
+        <ThemeProvider theme={theme}>
+            <StyledForm
+                onSubmit={onFormSubmit}
+            >
+                <StyledInput
+                    ref={inputRef}
+                    placeholder="Co jest do zrobienia?"
+                    value={newTaskContent}
+                    onChange={({ target }) => setNewTaskContent(target.value)}
+                    required
+                />
+                <StyledButton>Dodaj zadanie</StyledButton>
+            </StyledForm>
+        </ThemeProvider>
     )
 };
 
