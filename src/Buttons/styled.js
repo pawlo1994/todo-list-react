@@ -15,7 +15,7 @@ export const StyledButtonsButton = styled.button`
     padding-left: 20px;
     background-color: transparent;
     border: none;
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.buttonMainColor};
     transition: color 0.3s;
 
     @media(max-width:${({ theme }) => theme.breakpoint}px){

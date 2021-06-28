@@ -24,7 +24,7 @@ export const StyledInput = styled.input`
 export const StyledButton = styled.button`
     flex-shrink: 0;
     padding: 10px;
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({ theme }) => theme.buttonMainColor};
     color: #fff;
     border: none;
     transition: background-color 0.3s, transform 0.3s;
