@@ -5,7 +5,7 @@ export const StyledButtons = styled.div`
     list-style-type: none;
     padding: 0; 
 
-    @media(max-width:767px){
+    @media(max-width:${({ theme }) => theme.breakpoint}px){
         flex-direction: column;
         align-items: center;
     }
@@ -18,7 +18,7 @@ export const StyledButtonsButton = styled.button`
     color: hsl(180, 100%, 25%);
     transition: color 0.3s;
 
-    @media(max-width:767px){
+    @media(max-width:${({ theme }) => theme.breakpoint}px){
         padding-left: 0;
         padding-bottom: 15px;
     }

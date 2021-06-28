@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
     padding: 20px;
     display: flex;
 
-    @media(max-width: 767px){
+    @media(max-width: ${({ theme }) => theme.breakpoint}px){
         flex-direction: column;
     }
 `;
@@ -16,7 +16,7 @@ export const StyledInput = styled.input`
     padding: 10px;
     border: 1px solid #ccc;
 
-    @media(max-width: 767px){
+    @media(max-width: ${({ theme }) => theme.breakpoint}px){
         margin: 0 0 10px;
     }
 `;

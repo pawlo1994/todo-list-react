@@ -13,7 +13,7 @@ export const StyledSectionHeader = styled.header`
     border-bottom: 2px solid #ddd;
     padding: 0 20px;
 
-    @media(max-width: 767px){
+    @media(max-width: ${({ theme }) => theme.breakpoint}px){
         flex-direction: column;
     }
 `;
