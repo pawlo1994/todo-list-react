@@ -14,17 +14,22 @@ export const useTasks = () => {
     const toggleTaskDone = (id) => {
         setTasks(tasks => tasks.map(task => {
             if (task.id === id) {
-                return { ...task, done: !task.done };
+                return {
+                    ...task,
+                    done: !task.done,
+                };
             }
             return task;
         }));
     };
 
     const setAllDone = () => {
-        setTasks(tasks => tasks.map(task => ({
-            ...task,
-            done: true,
-        })));
+        setTasks(tasks => tasks.map(task => (
+            {
+                ...task,
+                done: true,
+            }
+        )));
     };
 
     const addNewTask = (content) => {
@@ -38,5 +43,11 @@ export const useTasks = () => {
             ]);
     };
 
-    return { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask };
+    return {
+        tasks,
+        removeTask,
+        toggleTaskDone,
+        setAllDone,
+        addNewTask,
+    };
 };
